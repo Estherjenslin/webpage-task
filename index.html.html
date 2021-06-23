@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+			<h2>Evaluation Wizard</h2>
+			
+            <form method="POST" id="signup-form" class="signup-form" enctype="multipart/form-data">
+                <h3>
+                    Basic 
+                </h3>
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-file">
+                            <input type="file" class="inputfile" name="your_picture" id="your_picture"  onchange="readURL(this);" data-multiple-caption="{count} files selected" multiple />
+                            <label for="your_picture">
+                                <figure>
+                                    <img src="images/your-picture.png" alt="" class="your_picture_image">
+                                </figure>
+                                <span class="file-button">choose picture</span>
+                            </label>
+                        </div>
+                        <div class="form-group-flex">
+                            <div class="form-group">
+                                <input type="text" name="first_name" id="first_name" placeholder="Candidate Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="last_name" id="last_name" placeholder="Panalist Name" />
+                            </div>
+                            <div class="form-group">
+		                <input type="date" name="date" id="date" placeholder="Date of interview" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    Skills
+                </h3>
+                <fieldset>
+                    <div class="form-radio">
+                        <label for="job" class="label-radio">Select all the applicable skills</label>
+                        <div class="form-flex">
+                            <div class="form-radio">
+                                <input type="radio" name="job" value="angular4" id="angular4" />
+                                <label for="angular4">
+                                    <figure>                                     
+										<i class="far fa-circle" size="7px"></></i>
+                                    </figure>
+                                    <span>Angular 4</span>
+                                </label>
+                            </div>
+
+                            <div class="form-radio">
+                                <input type="radio" name="job" value="html5" id="html5" />
+                                <label for="html5">
+                                    <figure>
+                                        <i class="far fa-circle" size="7px"></i>
+                                    </figure>
+                                    <span>Html5</span>
+                                </label>
+                            </div>
+
+                            <div class="form-radio">
+                                <input type="radio" name="css3" value="css3" id="css3" />
+                                <label for="css3">
+                                    <figure>
+                                        <i class="far fa-circle" size="7px"></></i>
+                                    </figure>
+                                    <span>CSS3</span>
+                                </label>
+                            </div>
+							
+							<div class="form-radio">
+                                <input type="radio" name="js" value="js" id="js" />
+                                <label for="js">
+                                    <figure>
+                                        <i class="far fa-circle" size="7px"></></i>
+                                    </figure>
+                                    <span>Javascript</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    Scores
+                </h3>
+				
+                <fieldset>
+                    <div class="form-row form-input-flex">
+                       <form id="create form">
+					   <div>
+							<table class="inputs_table" colspan="4">
+							<col style="width:50%">
+							<col style="width:150%">
+							<col style="width:250%">
+							<col style="width:350%">
+							<body>
+							
+								<tr>
+									<td>
+										Experience :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</td>
+									<td>
+										<input type="radio" name="fav" value="beginer" /> Beginner
+									</td>
+									<td>
+										<input type="radio" name="fav" value="intermediate" /> intermediate
+									</td>
+									<td>
+										<input type="radio" name="fav" value="expert" />expert
+									</td>
+								</tr>
+							
+								<td>
+										Technology Strength :
+									</td>
+									<td>
+										<input type="radio" name="fav" value="beginer" /> Beginner
+									</td>
+									<td>
+										<input type="radio" name="fav" value="intermediate" /> intermediate
+									</td>
+									<td>
+										<input type="radio" name="fav" value="expert" />expert
+									</td>
+								</tr>
+								<td>
+										Design Capabilities :
+									</td>
+									<td>
+										<input type="radio" name="fav" value="beginer" /> Beginner
+									</td>
+									<td>
+										<input type="radio" name="fav" value="intermediate" /> intermediate
+									</td>
+									<td>
+										<input type="radio" name="fav" value="expert" />expert
+									</td>
+								</tr>
+								<td>
+										Leadership Ability :
+									</td>
+									<td>
+										<input type="radio" name="fav" value="beginer" /> Beginner
+									</td>
+									<td>
+										<input type="radio" name="fav" value="intermediate" /> intermediate
+									</td>
+									<td>
+										<input type="radio" name="fav" value="expert" />expert
+									</td>
+								</tr>
+							</body>
+							</table>
+					    
+                        </div>					
+				    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
